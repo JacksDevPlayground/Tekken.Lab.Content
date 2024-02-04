@@ -1,0 +1,49 @@
+{
+  "title": "Raven",
+  "legend": [
+    {
+      "notation": "SZN",
+      "description": "d 34"
+    },
+    {
+      "notation": "BT",
+      "description": "b 34"
+    }
+  ],
+  "combos": [
+    {
+      "title": "Important Combo #1",
+      "date": "2024-02-04",
+      "notes": "ayyy test",
+      "user": {
+        "username": "Cse",
+        "userUrl": "https://github.com/JackDevAU"
+      },
+      "hitCount": 12,
+      "damageCount": 68,
+      "counterHitDuringRage": false,
+      "video": {
+        "videoUrl": "https://www.youtube.com/watch?v=pxoTasfp9YY",
+        "videoTimestamp": "1"
+      },
+      "stage": "urban-square-evening",
+      "combo": "d/f 2 , BT 2 1 , 1 2 D , Soulzone 3 2 , d d/f f 3"
+    },
+    {
+      "title": "woooza",
+      "date": "2024-02-04",
+      "notes": "Some notes",
+      "user": {
+        "username": "Cse",
+        "userUrl": "#"
+      },
+      "hitCount": 2,
+      "damageCount": 69,
+      "counterHitDuringRage": false,
+      "video": {
+        "videoUrl": "https://www.youtube.com/watch?v=pxoTasfp9YY"
+      },
+      "combo": "d/f 2 3 , f F 3 , 2 , b 2 4 2 , dash , d/f f f 3"
+    }
+  ]
+}
