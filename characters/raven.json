@@ -13,6 +13,9 @@
   "combos": [
     {
       "title": "Important Combo #1",
+      "tags": [
+        "easy"
+      ],
       "date": "2024-02-04",
       "notes": "ayyy test",
       "user": {
@@ -31,6 +34,7 @@
     },
     {
       "title": "woooza",
+      "tags": [],
       "date": "2024-02-04",
       "notes": "Some notes",
       "user": {
