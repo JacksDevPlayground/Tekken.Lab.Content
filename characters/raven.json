@@ -13,6 +13,7 @@
   "combos": [
     {
       "title": "Important Combo #1",
+      "shareCode": "combo1",
       "tags": [
         "easy"
       ],
@@ -34,6 +35,7 @@
     },
     {
       "title": "woooza",
+      "shareCode": "combo2",
       "tags": [],
       "date": "2024-02-04",
       "notes": "Some notes",
