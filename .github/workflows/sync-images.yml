@@ -1,0 +1,30 @@
+name: Sync Images to Azure Blob Storage
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'public/**'
+
+jobs:
+  sync-images:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install Azure CLI
+      run: |
+        curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+
+    - name: Login to Azure CLI
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Sync images to Azure Blob Storage
+      run: |
+        az storage blob upload-batch -d ${{ secrets.CONTAINER_NAME }} --account-name ${{ secrets.ACCOUNT_NAME }} -s public/
+      env:
+        AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
